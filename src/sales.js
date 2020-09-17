@@ -6,13 +6,16 @@ const sales = [
     { itemSold: 'Hockey stick', price: 54.95, dateSold: '2017-03-19', id: 'j_999' }
     ]
     
+    /* creating totalPrice function */
     function totalPrice() {
-    
+
+    /* mapping over array to get the prices into an array */
     const priceArray = sales.map(item => {
         const prices = item.price  
         
         return prices
     })
+    /* reducing the array to produce the total sum of the prices */
         var sum = priceArray.reduce(function(a, b){
             return a + b;
         }, 0);
