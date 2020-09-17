@@ -7,10 +7,15 @@ const sales = [
     ]
     
     function totalPrice() {
+    
     const priceArray = sales.map(item => {
         const prices = item.price  
         
         return prices
     })
-
+        var sum = priceArray.reduce(function(a, b){
+            return a + b;
+        }, 0);
+    
+    return sum.toFixed(2)
     }
