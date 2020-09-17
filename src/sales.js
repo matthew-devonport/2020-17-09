@@ -28,7 +28,7 @@ const sales = [
 
 // 2. Return the items which were sold in 2017.
 
-   // creating saleDate function 
+    // creating saleDate function 
     function saleDate() {
 
         // filtering dateSold properties by 2017 date with startsWidth method
@@ -38,5 +38,15 @@ const sales = [
         //returning result which shows the two correct items
         return items
         }
-      
-      
+   
+// 3.  Return an array of all of the itemsSold properties as strings, sorted alphabetically.    
+
+     // creating itemsSold function
+        function itemsSold() {
+        // mapping over array to get the items sold into an array     
+            const itemArray = sales.map(item => {
+            const items = item.itemSold
+              
+            return items
+          })
+        }
