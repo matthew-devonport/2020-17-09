@@ -8,34 +8,34 @@ const sales = [
 
 // 1. Return the sum of the price of all properties as a single value.
 
-// creating totalPrice function 
+// creating totalPrice function. 
 function totalPrice() {
 
-    // mapping over array to get the prices into an array 
+    // mapping over array to get the prices into an array. 
     const priceArray = sales.map(item => {
         const prices = item.price
 
         return prices
     })
-    // reducing the array to produce the total sum of the prices 
+    // reducing the array to produce the total sum of the prices. 
     var sum = priceArray.reduce(function (a, b) {
         return a + b;
     }, 0);
 
-    // returning result of the total sum with minimal decimal places    
+    // returning result of the total sum with minimal decimal places.    
     return sum.toFixed(2)
 }
 
 // 2. Return the items which were sold in 2017.
 
-// creating saleDate function 
+// creating saleDate function. 
 function saleDate() {
 
-    // filtering dateSold properties by 2017 date with startsWidth method
+    // filtering dateSold properties by 2017 date with startsWidth method.
     const date = "2017"
     const items = sales.filter(o => o.dateSold.startsWith(date));
 
-    // returning result which shows the two correct items
+    // returning result which shows the two correct items.
     return items
 }
 
@@ -43,7 +43,7 @@ function saleDate() {
 
 // creating itemsSold function
 function itemsSold() {
-    // mapping over array to get the items sold into an array     
+    // mapping over array to get the items sold into an array.     
     const itemArray = sales.map(item => {
         const items = item.itemSold
 
@@ -56,10 +56,15 @@ function itemsSold() {
 
 // 4.  Using id as an argument, return the sale which matches the id.
 
-// creating findSaleById function which takes 3 arguments including id
+// creating findSaleById function which takes 3 arguments including id.
 function findSaleById(sales, id, value) {
     // looping over array
     for (var i = 0; i < sales.length; i++) {
-
+        // if statement to see if the id matches the value arguement to be used in the function.
+        if (sales[i][id] === value) {
+            return sales[i];
+        }
     }
+    return null;
 }
+// when calling the function you would use the syntax findSaleById(sales, 'id', 'j_999'), although use whichever id 'value' required to match the sale.
