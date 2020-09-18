@@ -25,7 +25,7 @@ $mainColor: #283972;
 
 .sidenav {
   grid-area: sidenav;
-  background-color: #232035;
+  background-color: #756bb1;
 }
 
 .main {
@@ -70,6 +70,19 @@ $mainColor: #283972;
   color: slategray;
 }
 
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 485px;
+}
+
+.card:nth-child(2) {
+  height: 200px;
+}
+
+.card:nth-child(3) {
+  height: 265px;
+}
+
 .header, .footer {
   display: flex;
   align-items: center;
@@ -77,4 +90,46 @@ $mainColor: #283972;
   padding: 0 16px;
   background-color: #c9c5df;
 }
+
+
+// Responsive Layout
+
+  /* Non-mobile styles, 750px breakpoint */
+  @media only screen and (min-width: 781px) {
+    /* Show the sidenav */
+    .grid-container {
+      grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+      grid-template-areas:
+        "sidenav header"
+        "sidenav main"
+        "sidenav footer";
+    }
+
+    .sidenav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobileNavIcon {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+  .sidenav {
+    visibility: hidden;
+  }
+  .grid-container {
+    grid-template-columns: 40px 1fr;
+    background-color:#756bb1;
+  }
+
+  .mobileNavIcon {
+    visibility: visible;
+    float: top;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-left: 12%;
+  }
+  }
 
