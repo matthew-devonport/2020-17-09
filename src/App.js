@@ -3,10 +3,17 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <React.Fragment>
+    <div className="app">
+      <div className="dashboard">
+      <header className="dashHeader">
+        Header Text
       </header>
+      <section></section>
+      <aside></aside>
     </div>
+    </div>
+    </React.Fragment>
   );
 }
 
