@@ -1,1 +1,17 @@
 
+Box Model:
+
+Each HTML element is treated is a box (as if there is a boundary around them). These boxes sit next to each other or stack on top of one another depending on the properties we give them.
+When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify.
+
+This picture below illustrates the box model:
+![alt text](https://ibb.co/0sR7ZRn)
+
+Explanation of the different parts of the box model:
+
+Content - The content (and HTML element) of the box, where text and images appear.
+Padding - Clears an area around the content. The padding is transparent.
+Border - A border that goes around the padding and content.
+Margin - Clears an area outside the border. The margin is transparent.
+
+Using CSS, we can style our elements (each treated as a box) to respond to all kinds of devices and layouts. Their positions, sizing and space can respect each other which is very useful.
