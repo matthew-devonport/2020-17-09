@@ -18,7 +18,12 @@ function App() {
             <li class="sidenav__list-item">Item Five</li>
           </ul>
         </aside>
-        <main className="main"></main>
+        <main className="main">
+          <div class="main-header">
+            <div class="main-header__heading">Hello User</div>
+            <div class="main-header__updates">Recent Items</div>
+          </div>
+        </main>
         <footer className="footer">
           <div class="footer__copyright">&copy; 2020 Matthew Devonport</div>
           <div class="footer__signature">PHEARNOC Digital</div>
