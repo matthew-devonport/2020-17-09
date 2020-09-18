@@ -1,0 +1,244 @@
+$mainColor: #283972;
+
+@mixin flexCenter {
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #c0b9e9;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #756bb1;
+}
+
+.main {
+  grid-area: main;
+  background-color: #d7d6dd;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #c0b9e9;
+}
+
+// Header
+
+.headerSearch {
+  position: fixed;
+  right: 7px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+// Sidenav
+.sidenav {
+  display: flex; /* Will be hidden on mobile */
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #756bb1;
+   .sidenav__list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+  .sidenav__list-item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+  }
+  .sidenav__list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
+
+// Main
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  height: 150px; /* Force our height since we don't have actual content yet */
+  background-color: #e3e4e6;
+  color: slategray;
+}
+
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 485px;
+}
+
+.card:nth-child(2) {
+  height: 200px;
+}
+
+.card:nth-child(3) {
+  height: 265px;
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #c9c5df;
+}
+
+
+// Responsive Layout
+
+  /* Non-mobile styles, 750px breakpoint */
+  @media only screen and (min-width: 781px) {
+    /* Show the sidenav */
+    .grid-container {
+      grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+      grid-template-areas:
+        "sidenav header"
+        "sidenav main"
+        "sidenav footer";
+    }
+
+    .sidenav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobileNavIcon {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+  .sidenav {
+    visibility: hidden;
+  }
+  .grid-container {
+    grid-template-columns: 40px 1fr;
+    background-color:#756bb1;
+  }
+
+  .mobileNavIcon {
+    visibility: visible;
+    float: top;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  }
+
+// Pop Up Box
+
+#popup-overlay {
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #756bb1;
+  overflow-y: hidden;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  z-index: 6;
+}
+
+#popup-overlay-sidenav {
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #756bb1;
+  overflow-y: scroll;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  z-index: 6;
+}
+
+#popup-link-box {
+    cursor: pointer;
+}
+
+
+
+#popup-close {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  margin-right: 25px;
+  margin-top: -30px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+    color: #ddd;
+    cursor: pointer;
+}
+
+#popup-close-sidenav {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  margin-right: 23px;
+  margin-top: -30px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+    color: #ddd;
+    cursor: pointer;
+}
+
+
+
+.sidenavPopup {
+  display: flex; 
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #756bb1;
+   .sidenav__listPopup {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+  .sidenav__list-itemPopup {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+  }
+  .sidenav__list-itemPopup:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
+
+
