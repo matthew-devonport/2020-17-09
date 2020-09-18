@@ -138,6 +138,7 @@ $mainColor: #283972;
 #popup-overlay {
   position: fixed;
   height: 100%;
+  width: 20%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -150,9 +151,10 @@ $mainColor: #283972;
   z-index: 6;
 }
 
-#popup-overlay-services {
+#popup-overlay-sidenav {
   position: fixed;
   height: 100%;
+  width: 20%;
   top: 0;
   bottom: 0;
   left: 0;
