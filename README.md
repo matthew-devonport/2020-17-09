@@ -5,7 +5,7 @@ Each HTML element is treated is a box (as if there is a boundary around them). T
 When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify.
 
 This picture below illustrates the box model:
-![alt text](https://ibb.co/0sR7ZRn)
+![Border Box Image](public/img//border-box.jpg?raw=true "Border Box")
 
 Explanation of the different parts of the box model:
 
