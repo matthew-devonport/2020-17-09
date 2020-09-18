@@ -53,8 +53,6 @@ class Sidenav extends React.Component {
       </ul>
     </aside>
   )
-
-
 }
 
 
