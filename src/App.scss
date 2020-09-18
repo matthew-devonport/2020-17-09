@@ -101,22 +101,6 @@ $mainColor: #283972;
 
 // --- Pop Up Box --- //
 
-#popup-overlay {
-  position: fixed;
-  height: 100%;
-  width: 23%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #756bb1;
-  overflow-y: hidden;
-  -webkit-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-  z-index: 6;
-}
-
 #popup-overlay-sidenav {
   position: fixed;
   height: 100%;
@@ -131,26 +115,6 @@ $mainColor: #283972;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
   z-index: 6;
-}
-
-#popup-link-box {
-    cursor: pointer;
-}
-
-#popup-close {
-  position: absolute;
-  top: 21px;
-  left: 7px;
-  margin-right: 25px;
-  margin-top: -30px;
-  -webkit-transition: all 200ms;
-  -o-transition: all 200ms;
-  transition: all 200ms;
-  font-size: 3rem;
-  font-weight: bold;
-  text-decoration: none;
-    color: #ddd;
-    cursor: pointer;
 }
 
 #popup-close-sidenav {
@@ -191,73 +155,73 @@ $mainColor: #283972;
 
 // Responsive Layout
 
-  /* Non-mobile styles, 750px breakpoint */
-  @media only screen and (min-width: 781px) {
-    /* Show the sidenav */
-    .grid-container {
-      grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
-      grid-template-areas:
-        "sidenav header"
-        "sidenav main"
-        "sidenav footer";
-    }
-
-    .sidenav {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .mobileNavIcon {
-      visibility: hidden;
-    }
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 781px) {
+  /* Show the sidenav */
+  .grid-container {
+    grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
   }
 
-  // Scaling for iPad/tablet devices
-
-  @media only screen and (max-width: 780px) {
-    .sidenav {
-      visibility: hidden;
-    }
-    .grid-container {
-      grid-template-columns: 40px 1fr;
-      background-color:#756bb1;
-    }
-
-    .mobileNavIcon {
-      visibility: visible;
-      float: top;
-      font-size: 40px;
-      color: whitesmoke;
-      text-align: center;
-    }
+  .sidenav {
+    display: flex;
+    flex-direction: column;
   }
 
-  // Scaling for larger mobile devices
-  @media only screen and (max-width: 450px) {
-    #popup-overlay-sidenav {
-      width: 44%;
-    }
-    .headerSearch {
-      width: 33%;
-    }
-    .main {
-      font-size: 12px;
-    }
-    .footer {
-    font-size: 10px;
-    }
+  .mobileNavIcon {
+    visibility: hidden;
   }
-
-  // Scaling for smaller mobile devices
-  @media only screen and (max-width: 385px) {
-    #popup-overlay-sidenav {
-      width: 50%;
-    }
 }
 
-  // Scaling for iphone 5/SE users
-  @media only screen and (max-width: 325px) {
-    #popup-overlay-sidenav {
-      font-size: 14px;
-    }
+// Scaling for iPad/tablet devices
+
+@media only screen and (max-width: 780px) {
+  .sidenav {
+    visibility: hidden;
+  }
+  .grid-container {
+    grid-template-columns: 40px 1fr;
+    background-color:#756bb1;
+  }
+
+  .mobileNavIcon {
+    visibility: visible;
+    float: top;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+
+// Scaling for larger mobile devices
+@media only screen and (max-width: 450px) {
+  #popup-overlay-sidenav {
+    width: 44%;
+  }
+  .headerSearch {
+    width: 33%;
+  }
+  .main {
+    font-size: 12px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+
+// Scaling for smaller mobile devices
+@media only screen and (max-width: 385px) {
+  #popup-overlay-sidenav {
+    width: 50%;
+  }
+}
+
+// Scaling for iphone 5/SE users
+@media only screen and (max-width: 325px) {
+  #popup-overlay-sidenav {
+    font-size: 14px;
+  }
 }
