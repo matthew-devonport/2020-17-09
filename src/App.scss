@@ -1,15 +1,19 @@
-$mainColor: #BAD155;
+$mainColor: #ddccab;
+
+@mixin flexCenter {
+  display: flex;    
+  justify-content: center;
+}
 
 .App {
   text-align: center;
   
   .App-header {
+    @include flexCenter();
     background-color: $mainColor;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
   }
