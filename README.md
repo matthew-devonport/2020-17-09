@@ -1,4 +1,4 @@
-<h3> :postbox: Box Model:</h3>
+<h3> :postbox: Box Model</h3>
 
 Each HTML element is treated is a box (as if there is a boundary around them). These boxes sit next to each other or stack on top of one another depending on the properties we give them.
 When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify.
@@ -15,7 +15,7 @@ Explanation of the different parts of the box model:
 </ul><br>
 Using CSS, we can style our elements (each treated as a box) to respond to all kinds of devices and layouts. Their positions, sizing and space can respect each other which is very useful.
 
-<h3>:pager: Javascript Is Fun!:</h3>
+<h3>:pager: Javascript Is Fun!</h3>
 
 In the directory src there will be a file called sales.js (src/sales.js).
 
