@@ -6,34 +6,36 @@ $mainColor: #283972;
   align-items: center;
 }
 
-.app {
-  @include flexCenter();
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
 }
 
-.dashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 60vw;
-  margin-top: 10%;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  -webkit-border-radius:5px;
-  .dashHeader {
-    display: flex;
-    align-self: flex-start;
-    background-color: $mainColor;
-    min-height: 10%;
-    width: 100%;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #394263;
+}
+
+.main {
+  grid-area: main;
+  background-color: #8fd4d9;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
 }
 
 

@@ -4,15 +4,14 @@ import './App.scss';
 function App() {
   return (
     <React.Fragment>
-    <div className="app">
-      <div className="dashboard">
-      <header className="dashHeader">
-        Header Text
+      <div className="grid-container">
+      <header className="header">
       </header>
-      <section></section>
-      <aside></aside>
+      <aside className="sidenav"></aside>
+      <main className="main"></main>
+      <footer className="footer"></footer>
     </div>
-    </div>
+
     </React.Fragment>
   );
 }
