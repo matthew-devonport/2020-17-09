@@ -1,5 +1,8 @@
 import React from 'react';
+import Sidenav from './Sidenav'
+
 import './App.scss';
+
 
 function App() {
   return (
@@ -9,16 +12,7 @@ function App() {
         <div className="header__avatar">Dashboard</div>
           <input className="header__search" placeholder="search"/>
         </header>
-        <aside className="sidenav">
-          <div className="mobileNavIcon">+</div>
-          <ul className="sidenav__list">
-            <li className="sidenav__list-item">Item One</li>
-            <li className="sidenav__list-item">Item Two</li>
-            <li className="sidenav__list-item">Item Three</li>
-            <li className="sidenav__list-item">Item Four</li>
-            <li className="sidenav__list-item">Item Five</li>
-          </ul>
-        </aside>
+          <Sidenav />
         <main className="main">
           <div className="main-header">
             <div className="main-header__heading">Hello User</div>
