@@ -53,3 +53,13 @@ function itemsSold() {
     itemArray.sort();
     return itemArray
 }
+
+// 4.  Using id as an argument, return the sale which matches the id.
+
+// creating findSaleById function which takes 3 arguments including id
+function findSaleById(sales, id, value) {
+    // looping over array
+    for (var i = 0; i < sales.length; i++) {
+
+    }
+}
