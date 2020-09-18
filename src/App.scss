@@ -133,3 +133,114 @@ $mainColor: #283972;
   }
   }
 
+// Pop Up Box
+
+#popup-overlay {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.973);
+  overflow-y: hidden;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  z-index: 6;
+}
+
+#popup-overlay-services {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.973);
+  overflow-y: scroll;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  z-index: 6;
+}
+
+#popup-link-box {
+    cursor: pointer;
+}
+
+
+
+#popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  margin-top: -30px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+    color: #06768d;
+    cursor: pointer;
+}
+
+#popup-close-services {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  margin-top: -30px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+    color: #06768d;
+    cursor: pointer;
+}
+
+#popup-close:hover {
+  color: #800000;
+}
+
+#popup-close-services:hover {
+  color: #800000;
+}
+
+@media screen and (max-width: 600px) {
+  #popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-top: -8px;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+      color: #40E0D0;
+      cursor: pointer;
+  }
+
+  #popup-close-services {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-top: -8px;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+      color: #40E0D0;
+      cursor: pointer;
+  }
+  }
