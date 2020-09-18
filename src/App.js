@@ -22,7 +22,7 @@ function App() {
         </main>
         <footer className="footer">
           <div className="footer__copyright">&copy; 2020 Matthew Devonport</div>
-          <div className="footer__signature">PHEARNOC Digital</div>
+          <div className="footer__signature">Sample Text</div>
         </footer>
       </div>
     </React.Fragment>

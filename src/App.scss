@@ -89,19 +89,6 @@ $mainColor: #283972;
   color: slategray;
 }
 
-/* Force varying heights to simulate dynamic content */
-.card:first-child {
-  height: 485px;
-}
-
-.card:nth-child(2) {
-  height: 200px;
-}
-
-.card:nth-child(3) {
-  height: 265px;
-}
-
 .header, .footer {
   display: flex;
   align-items: center;
@@ -230,36 +217,49 @@ $mainColor: #283972;
   // Scaling for iPad/Tablet devices
 
   @media only screen and (max-width: 780px) {
-  .sidenav {
-    visibility: hidden;
-  }
-  .grid-container {
-    grid-template-columns: 40px 1fr;
-    background-color:#756bb1;
-  }
+    .sidenav {
+      visibility: hidden;
+    }
+    .grid-container {
+      grid-template-columns: 40px 1fr;
+      background-color:#756bb1;
+    }
 
-  .mobileNavIcon {
-    visibility: visible;
-    float: top;
-    font-size: 40px;
-    color: whitesmoke;
-    text-align: center;
-  }
+    .mobileNavIcon {
+      visibility: visible;
+      float: top;
+      font-size: 40px;
+      color: whitesmoke;
+      text-align: center;
+    }
   }
 
   // Scaling for larger mobile devices
-
   @media only screen and (max-width: 450px) {
-  #popup-overlay-sidenav {
-    width: 44%;
-  }
-  .headerSearch {
-    width: 33%;
-  }
-  .main {
-    font-size: 12px;
-  }
-  .footer {
+    #popup-overlay-sidenav {
+      width: 44%;
+    }
+    .headerSearch {
+      width: 33%;
+    }
+    .main {
+      font-size: 12px;
+    }
+    .footer {
     font-size: 10px;
+    }
   }
-  }
+
+  // Scaling for smaller mobile devices
+  @media only screen and (max-width: 385px) {
+    #popup-overlay-sidenav {
+      width: 50%;
+    }
+}
+
+  // Scaling for iphone 5/SE users
+  @media only screen and (max-width: 325px) {
+    #popup-overlay-sidenav {
+      font-size: 14px;
+    }
+}
