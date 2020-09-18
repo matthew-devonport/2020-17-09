@@ -6,8 +6,8 @@ function App() {
     <React.Fragment>
       <div className="grid-container">
         <header className="header">
-          <div className="header__search">Search...</div>
-          <div className="header__avatar">Icon</div>
+        <div className="header__avatar">Dashboard</div>
+          <input className="header__search" placeholder="search"/>
         </header>
         <aside className="sidenav">
           <div className="mobileNavIcon">+</div>
