@@ -1,7 +1,7 @@
 <h3> :postbox: Box Model</h3>
 
 Each HTML element is treated is a box (as if there is a boundary around them). These boxes sit next to each other or stack on top of one another depending on the properties we give them.
-When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify.
+When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify in four different directions (top, bottom, left and right).
 
 This picture below illustrates the box model:<br><br>
 ![Border Box Image](public/img//border-box.jpg?raw=true "Border Box")
@@ -34,3 +34,5 @@ npm run start
 ```
 This runs this app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
