@@ -110,48 +110,6 @@ $mainColor: #283972;
   background-color: #c9c5df;
 }
 
-
-// Responsive Layout
-
-  /* Non-mobile styles, 750px breakpoint */
-  @media only screen and (min-width: 781px) {
-    /* Show the sidenav */
-    .grid-container {
-      grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
-      grid-template-areas:
-        "sidenav header"
-        "sidenav main"
-        "sidenav footer";
-    }
-
-    .sidenav {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .mobileNavIcon {
-      visibility: hidden;
-    }
-  }
-
-  @media only screen and (max-width: 780px) {
-  .sidenav {
-    visibility: hidden;
-  }
-  .grid-container {
-    grid-template-columns: 40px 1fr;
-    background-color:#756bb1;
-  }
-
-  .mobileNavIcon {
-    visibility: visible;
-    float: top;
-    font-size: 40px;
-    color: whitesmoke;
-    text-align: center;
-  }
-  }
-
 // Pop Up Box
 
 #popup-overlay {
@@ -246,4 +204,59 @@ $mainColor: #283972;
   }
 }
 
+// Responsive Layout
 
+  /* Non-mobile styles, 750px breakpoint */
+  @media only screen and (min-width: 781px) {
+    /* Show the sidenav */
+    .grid-container {
+      grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+      grid-template-areas:
+        "sidenav header"
+        "sidenav main"
+        "sidenav footer";
+    }
+
+    .sidenav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobileNavIcon {
+      visibility: hidden;
+    }
+  }
+
+  // Scaling for iPad/Tablet devices
+
+  @media only screen and (max-width: 780px) {
+  .sidenav {
+    visibility: hidden;
+  }
+  .grid-container {
+    grid-template-columns: 40px 1fr;
+    background-color:#756bb1;
+  }
+
+  .mobileNavIcon {
+    visibility: visible;
+    float: top;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  }
+
+  // Scaling for larger mobile devices
+
+  @media only screen and (max-width: 450px) {
+  #popup-overlay-sidenav {
+    width: 44%;
+  }
+  .main {
+    font-size: 12px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  }
