@@ -9,7 +9,7 @@ function App() {
     <React.Fragment>
       <div className="grid-container">
         <header className="header">
-        <div className="header__avatar">Dashboard</div>
+        <div className="headerTitle">Dashboard</div>
           <input className="headerSearch" placeholder="search"/>
           <i className="fa fa-search searchIcon"></i>
         </header>
