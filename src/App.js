@@ -10,7 +10,8 @@ function App() {
       <div className="grid-container">
         <header className="header">
         <div className="header__avatar">Dashboard</div>
-          <input className="header__search" placeholder="search"/>
+          <input className="headerSearch" placeholder="search"/>
+          <i className="fa fa-search searchIcon"></i>
         </header>
           <Sidenav />
         <main className="main">

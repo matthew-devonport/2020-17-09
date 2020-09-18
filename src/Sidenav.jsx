@@ -58,7 +58,4 @@ class Sidenav extends React.Component {
 }
 
 
-
-
-
 export default Sidenav;

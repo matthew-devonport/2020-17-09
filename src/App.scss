@@ -38,6 +38,20 @@ $mainColor: #283972;
   background-color: #c0b9e9;
 }
 
+// Header
+
+.headerSearch {
+  position: fixed;
+  right: 7px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  z-index: 2;
+  cursor: pointer;
+}
+
 // Sidenav
 .sidenav {
   display: flex; /* Will be hidden on mobile */
@@ -208,7 +222,7 @@ $mainColor: #283972;
 
 
 .sidenavPopup {
-  display: flex; /* Will be hidden on mobile */
+  display: flex; 
   flex-direction: column;
   grid-area: sidenav;
   background-color: #756bb1;
