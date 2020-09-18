@@ -25,7 +25,7 @@ In that file is an array of objects. There are functions related to that array w
 
 You can view a dashboard UI design I have made by cloning this repository.
 
-After you will follow these instructions on your terminal:
+After you clone this repository, please follow these instructions on your terminal:
 
 ```
 cd 2020-17-09
