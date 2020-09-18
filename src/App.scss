@@ -143,7 +143,7 @@ $mainColor: #283972;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.973);
+  background: #756bb1;
   overflow-y: hidden;
   -webkit-transition: opacity 500ms;
   -o-transition: opacity 500ms;
@@ -159,7 +159,7 @@ $mainColor: #283972;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.973);
+  background: #756bb1;
   overflow-y: scroll;
   -webkit-transition: opacity 500ms;
   -o-transition: opacity 500ms;
@@ -175,74 +175,56 @@ $mainColor: #283972;
 
 #popup-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 21px;
+  left: 7px;
   margin-right: 25px;
   margin-top: -30px;
   -webkit-transition: all 200ms;
   -o-transition: all 200ms;
   transition: all 200ms;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
-    color: #06768d;
+    color: #ddd;
     cursor: pointer;
 }
 
 #popup-close-sidenav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-right: 25px;
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  margin-right: 23px;
   margin-top: -30px;
   -webkit-transition: all 200ms;
   -o-transition: all 200ms;
   transition: all 200ms;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
-    color: #06768d;
+    color: #ddd;
     cursor: pointer;
 }
 
-#popup-close:hover {
-  color: #800000;
+
+
+.sidenavPopup {
+  display: flex; /* Will be hidden on mobile */
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #756bb1;
+   .sidenav__listPopup {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+  .sidenav__list-itemPopup {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+  }
+  .sidenav__list-itemPopup:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
 }
 
-#popup-close-sidenav:hover {
-  color: #800000;
-}
 
-@media screen and (max-width: 600px) {
-  #popup-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 12px;
-    margin-top: -8px;
-    -webkit-transition: all 200ms;
-    -o-transition: all 200ms;
-    transition: all 200ms;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-      color: #40E0D0;
-      cursor: pointer;
-  }
-
-  #popup-close-sidenav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-right: 12px;
-    margin-top: -8px;
-    -webkit-transition: all 200ms;
-    -o-transition: all 200ms;
-    transition: all 200ms;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-      color: #40E0D0;
-      cursor: pointer;
-  }
-  }

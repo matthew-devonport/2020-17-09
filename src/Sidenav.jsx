@@ -43,13 +43,13 @@ class Sidenav extends React.Component {
   }
 
   popupSideNav = (
-    <aside className="sidenav">
-      <ul className="sidenav__list">
-        <li className="sidenav__list-item">Item One</li>
-        <li className="sidenav__list-item">Item Two</li>
-        <li className="sidenav__list-item">Item Three</li>
-        <li className="sidenav__list-item">Item Four</li>
-        <li className="sidenav__list-item">Item Five</li>
+    <aside className="sidenavPopup">
+      <ul className="sidenav__listPopup">
+        <li className="sidenav__list-itemPopup">Item One</li>
+        <li className="sidenav__list-itemPopup">Item Two</li>
+        <li className="sidenav__list-itemPopup">Item Three</li>
+        <li className="sidenav__list-itemPopup">Item Four</li>
+        <li className="sidenav__list-itemPopup">Item Five</li>
       </ul>
     </aside>
   )
