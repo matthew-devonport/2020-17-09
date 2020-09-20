@@ -31,7 +31,7 @@ test('itemsSold return items sold as an array', () => {
     expect(sales.itemsSold(array)).toStrictEqual(expected)
 })
 
-// Testing to check if findSaleById functions works correctly
+// Testing to check if findSaleById function works correctly
 test('findSaleById returns the sale from the id', () => {
 
     // Declaring value and id as arguments
