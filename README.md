@@ -61,4 +61,4 @@ The code and commenting on how each part of the code works is available to view 
  <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js" target="_blank">PopUpBox</a></li>
 </ul>
 
-
+Thank you for taking the time to read and engage with this page. Have a great day! :smile:
