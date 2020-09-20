@@ -1,4 +1,4 @@
-const sales = require('../sales')
+const sales = require('../sales/sales')
 
 // Declaring the sales array here as a way to show it on the test file, rather than importing.
 const array = [

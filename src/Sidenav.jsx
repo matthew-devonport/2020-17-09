@@ -12,7 +12,7 @@ class Sidenav extends React.Component {
     }
   }
 
-// Declaring the pop up content as a string to insert into 'popup-content' div in the popUpBox.js component.
+// Declaring the popup content as a string to insert into 'popup-content' div in the popUpBox.js component.
   popupContent = ''
 
 // Function that changes the state of popupIsShowing once triggered.
@@ -42,7 +42,7 @@ class Sidenav extends React.Component {
             <li className="sidenav__list-item">Item Five</li>
           </ul>
         </aside>
-        {/* adding state and popUpBox component within Sidenav component. */}
+        {/* adding state and popUpBox.js component within Sidenav component. */}
         {this.state.popupIsShowing && <PopUpBox content={this.popupContent} togglePopup={this.togglePopup}
         />}
       </React.Fragment>
