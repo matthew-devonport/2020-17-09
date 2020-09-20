@@ -40,8 +40,8 @@ The gif below shows a brief demonstration of the pop up working in production:
 ![Dashboard Gif](https://media.giphy.com/media/Sz5N8dGGJAbYMVRAvw/giphy.gif)
 
 To create the pop up I created a popUpBox component which has properties to use from the sideNav component. These are the abilites to get content from the sidenav content and display it as well as also having the ability to call upon state to be showing its content or not. Onclick events are the triggers to changing state which initially has the popup showing as false. Clicking the '+' button changes state to become true, which pops up sideNav component (which is set seperately to the main sideNav component content) on the UI. The event is then triggered back to false on the popUpBox component when hitting the 'x' button.
-<br>
-The code and commenting on how each part of the code works is available to view on these pages below:<br/ >
+<br><br>
+The code and commenting on how each part of the code works is available to view on these pages below:
 <ul>
   <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/Sidenav.jsx">sideNav</a></li>
 <li>popUpBox: [src/popUpBox.jsx](https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js)</li>
