@@ -24,7 +24,7 @@ In that file is an array of objects. There are functions related to that array w
 There are also four working tests for these functions ((src/tests/sales.test.js).
 These tests can be run with:
 ```
-npm test
+npm test a
 ```
 
 <h3>:chart_with_upwards_trend: Dashboard UI</h3>
