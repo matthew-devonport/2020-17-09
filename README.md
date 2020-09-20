@@ -17,11 +17,11 @@ Using CSS, we can style our elements (each treated as a box) to respond to all k
 
 <h3>:pager: Javascript Is Fun!</h3>
 
-In the directory src there will be a file called sales.js (<a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/sales/sales.js<a>).
+In the directory src there will be a file called sales.js which can be viewed at: <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/sales/sales.js<a>
 
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
-There are also four working tests for these functions (<a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/tests/sales.test.js<a>).
+There are also four working tests for these functions which can be viewd at: <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/tests/sales.test.js<a>
 After cloing this repository and installing dependencies, these tests can be run with:
 
 ```
