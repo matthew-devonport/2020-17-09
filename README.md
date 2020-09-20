@@ -7,7 +7,7 @@ This picture below illustrates the box model:<br><br>
 
 ![Border Box Image](public/img//border-box.jpg?raw=true "Border Box")
 
-<h2>Explanation of the different parts of the box model:</h2>
+<h2>Explanation of the different parts of the box model</h2>
 <ul>
 <li>Content - The content (and HTML element) of the box, where text and images appear.</li>
 <li>Padding - Clears an area around the content. The padding is transparent.</li>
@@ -16,7 +16,7 @@ This picture below illustrates the box model:<br><br>
 </ul><br>
 Using CSS, we can style our elements (each treated as a box) to respond to all kinds of devices and layouts. Their positions, sizing and space can respect each other which is very useful.
 
-<h1>:pager: Javascript Is Fun!</h1>
+<h1>:pager: Javascript is Fun!</h1>
 
 In the directory src there will be a file called sales.js which can be viewed at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/sales/sales.js<a>
 
