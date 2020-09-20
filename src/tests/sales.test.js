@@ -10,9 +10,25 @@ const array = [
     { itemSold: 'Hockey stick', price: 54.95, dateSold: '2017-03-19', id: 'j_999' }
 ]
 
-
-// Testing to check if totalPrice function works.
+// Testing to check if totalPrice function works correctly.
 test('return total prices', () => {
     expect(sales.totalPrice(array)).toBe("469.86")
+})
+
+// Testing to check itemsSold function works correctly.
+test('return items sold in 2017', () => {
+    const expected = [{
+    "dateSold": "2017-04-22", "id": "t_acds3", "itemSold": "Rugby ball", "price": 30}, {
+    "dateSold": "2017-03-19", "id": "j_999", "itemSold": "Hockey stick", "price": 54.95
+    }]
+    expect(sales.saleDate(array)).toStrictEqual(expected)
+})
+
+// Testing to check if itemsSold function works correctly
+test('return items sold as an array', () => {
+    const expected = [
+        "Cricket bat", "Football", "Hockey stick", "Rugby ball", "Trainers"
+        ]
+    expect(sales.itemsSold(array)).toStrictEqual(expected)
 })
 
