@@ -15,13 +15,13 @@ Explanation of the different parts of the box model:
 </ul><br>
 Using CSS, we can style our elements (each treated as a box) to respond to all kinds of devices and layouts. Their positions, sizing and space can respect each other which is very useful.
 
-<h3>:pager: Javascript Is Fun!</h3>
+<h1>:pager: Javascript Is Fun!</h1>
 
 In the directory src there will be a file called sales.js (src/sales.js).
 
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
-<h3>:chart_with_upwards_trend: Dashboard UI</h3>
+<h1>:chart_with_upwards_trend: Dashboard UI</h1>
 
 You can view a dashboard UI design I have made by cloning this repository.
 
