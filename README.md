@@ -41,7 +41,7 @@ I decided to go for a design like this due to being able to scale to mobile devi
 
 The gif below shows a brief demonstration of the pop up working in production:
 
-[Dashboard Gif](https://media.giphy.com/media/Sz5N8dGGJAbYMVRAvw/giphy.gif)
+![Dashboard Gif](https://media.giphy.com/media/Sz5N8dGGJAbYMVRAvw/giphy.gif)
 
 <h3>How does that popup work?</h3>
 
