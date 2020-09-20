@@ -1,4 +1,4 @@
-<h3> :postbox: Box Model</h3>
+<h1> :postbox: Box Model</h1>
 
 Each HTML element is treated is a box (as if there is a boundary around them). These boxes sit next to each other or stack on top of one another depending on the properties we give them.
 When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify in four different directions (top, bottom, left and right).
