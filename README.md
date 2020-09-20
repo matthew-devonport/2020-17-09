@@ -7,7 +7,7 @@ This picture below illustrates the box model:<br><br>
 
 ![Border Box Image](public/img//border-box.jpg?raw=true "Border Box")
 
-Explanation of the different parts of the box model:
+<h2>Explanation of the different parts of the box model:</h2>
 <ul>
 <li>Content - The content (and HTML element) of the box, where text and images appear.</li>
 <li>Padding - Clears an area around the content. The padding is transparent.</li>
@@ -24,7 +24,7 @@ In that file is an array of objects. There are functions related to that array w
 
 
 
-
+<h2>Testing</h2>
 There are also four working tests for these functions which can be viewd at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/tests/sales.test.js<a><br>
 
 After cloing this repository and installing dependencies, these tests can be run with:
@@ -32,6 +32,7 @@ After cloing this repository and installing dependencies, these tests can be run
 ```
 npm test a
 ```
+<br>
 <h1>:chart_with_upwards_trend: Dashboard UI</h1>
 
 <h2>Is this application live?</h2>
