@@ -4,6 +4,7 @@ Each HTML element is treated is a box (as if there is a boundary around them). T
 When applying CSS to the box model it consists of margins, borders, padding and the actual content itself which you can modify in four different directions (top, bottom, left and right).
 
 This picture below illustrates the box model:<br><br>
+
 ![Border Box Image](public/img//border-box.jpg?raw=true "Border Box")
 
 Explanation of the different parts of the box model:
@@ -21,27 +22,27 @@ In the directory src there will be a file called sales.js which can be viewed at
 
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
-<<<<<<< HEAD
-<h1>:chart_with_upwards_trend: Dashboard UI</h1>
-=======
+
+
+
 There are also four working tests for these functions which can be viewd at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/tests/sales.test.js<a><br>
+
 After cloing this repository and installing dependencies, these tests can be run with:
 
 ```
 npm test a
 ```
+<h1>:chart_with_upwards_trend: Dashboard UI</h1>
 
-<h3>:chart_with_upwards_trend: Dashboard UI</h3>
->>>>>>> 0db83c325a3e8a7345bb87b10a87f6f5bddc54e0
-
-<h3>Is this application live?</h3>
+<h2>Is this application live?</h2>
 
 You can view a dashboard UI design app which is live at: [https://matthew-devonport-dashboard.netlify.app/](https://matthew-devonport-dashboard.netlify.app/)
 
 This app has a functional side navigation pop up, although a snapshot of design can be seen below:<br><br>
+
 ![Dashboard image](public/img/dashboard.jpg?raw=true "Dashboard Image")
 
-<h3>Why did I go for this design?</h3>
+<h2>Why did I go for this design?</h2>
 
 I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality. The colour scheme works well and the font is very easy to read. I used the css styling of grid to give the layout of the design and then some javascript to call the pop up which happens with an onclick event in mobile/tablet devices 780px in viewport and under. As stated above, the app is live and can be seen/used on the link above on mobile devices.
 
@@ -49,7 +50,7 @@ The gif below shows a brief demonstration of the pop up working in production:
 
 ![Dashboard Gif](https://media.giphy.com/media/Sz5N8dGGJAbYMVRAvw/giphy.gif)
 
-<h3>How does that popup work?</h3>
+<h2>How does that popup work?</h2>
 
 To create the pop up I created a popUpBox component which has properties to use from the sideNav component. These are the abilites to get content from the sidenav content and display it as well as also having the ability to call upon state to be showing its content or not. Onclick events are the triggers to changing state which initially has the popup showing as false. Clicking the '+' button changes state to become true, which pops up sideNav component (which is set seperately to the main sideNav component content) on the UI. The event is then triggered back to false on the popUpBox component when hitting the 'x' button.
 <br><br>
