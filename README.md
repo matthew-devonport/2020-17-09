@@ -32,7 +32,7 @@ npm test a
 
 You can view a dashboard UI design app which is live at: [https://matthew-devonport-dashboard.netlify.app/](https://matthew-devonport-dashboard.netlify.app/)
 
-This app has a functional side navigation pop up, although a snapshot of design can be seen below
+This app has a functional side navigation pop up, although a snapshot of design can be seen below:<br>
 ![Dashboard image](public/img/dashboard.jpg?raw=true "Dashboard Image")
 
 I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality. The colour scheme works well and the font is very easy to read. I used the css styling of grid to give the layout of the design and then some javascript to call the pop up which happens with an onclick event in mobile/tablet devices 780px in viewport and under. As stated above, the app is live and can be seen/used on the link above on mobile devices.
