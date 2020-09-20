@@ -43,8 +43,8 @@ To create the pop up I created a popUpBox component which has properties to use 
 <br><br>
 The code and commenting on how each part of the code works is available to view on these pages below:
 <ul>
-  <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/Sidenav.jsx">sideNav</a></li>
- <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js">PopUpBox</a>
+  <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/Sidenav.jsx" "target="_blank">sideNav</a></li>
+ <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js" "target="_blank">PopUpBox</a>
 </ul>
 
 
