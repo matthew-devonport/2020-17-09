@@ -25,7 +25,7 @@ In that file is an array of objects. There are functions related to that array w
 
 
 <h2>Testing</h2>
-There are also four working tests for these functions which can be viewd at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/tests/sales.test.js<a><br>
+There are also four working tests for these functions which can be viewed at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/tests/sales.test.js<a><br>
 
 After cloing this repository and installing dependencies, these tests can be run with:
 
