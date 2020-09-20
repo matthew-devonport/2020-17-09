@@ -22,24 +22,15 @@ In the directory src there will be a file called sales.js (src/sales.js).
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
 There are also four working tests for these functions ((src/tests/sales.test.js).
-These tests can be run with:
+After cloing this repository and installing dependencies, these tests can be run with:
+
 ```
 npm test a
 ```
 
 <h3>:chart_with_upwards_trend: Dashboard UI</h3>
 
-You can view a dashboard UI design I have made by cloning this repository.
-
-After you clone this repository, please follow these instructions on your terminal:
-
-```
-cd 2020-17-09
-npm install
-npm run start
-```
-This runs this app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can view a dashboard UI design which is live at: [https://matthew-devonport-dashboard.netlify.app/](https://matthew-devonport-dashboard.netlify.app/)
 
 I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality.
 The colour scheme works well and the font is very easy to read.
