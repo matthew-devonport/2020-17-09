@@ -16,10 +16,10 @@ test('totalPrice returns total prices', () => {
 
 // Testing to check saleDate function works correctly.
 test('saleDate returns items sold in 2017', () => {
-    const expected = [{
-    "dateSold": "2017-04-22", "id": "t_acds3", "itemSold": "Rugby ball", "price": 30}, {
-    "dateSold": "2017-03-19", "id": "j_999", "itemSold": "Hockey stick", "price": 54.95
-    }]
+    const expected = [
+     { "dateSold": "2017-04-22", "id": "t_acds3", "itemSold": "Rugby ball", "price": 30 }, 
+     { "dateSold": "2017-03-19", "id": "j_999", "itemSold": "Hockey stick", "price": 54.95}
+     ]
     expect(sales.saleDate(array)).toStrictEqual(expected)
 })
 
