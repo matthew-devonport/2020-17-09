@@ -24,7 +24,7 @@ In that file is an array of objects. There are functions related to that array w
 There are also four working tests for these functions ((src/tests/sales.test.js).
 These tests can be run with:
 ```
-npm test
+npm test a
 ```
 
 <h3>:chart_with_upwards_trend: Dashboard UI</h3>
@@ -41,4 +41,7 @@ npm run start
 This runs this app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality.
+The colour scheme works well and the font is very easy to read.
 
+I used the css styling of grid to give the layout of the design and then some javascript to call the pop up which happens with an onclick event in mobile/tablet devices 780px in viewport and under.
