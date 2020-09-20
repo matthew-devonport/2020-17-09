@@ -22,7 +22,6 @@ In the directory src there will be a file called sales.js (src/sales.js).
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
 There are also four working tests for these functions ((src/tests/sales.test.js).
-
 These tests can be run with:
 ```
 npm test
