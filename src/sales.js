@@ -68,3 +68,11 @@ function findSaleById(sales, id, value) {
     return null;
 }
 // when calling the function you would use the syntax findSaleById(sales, 'id', 'j_999'), although use whichever id 'value' required to match the sale.
+
+
+module.exports = {
+    totalPrice,
+    saleDate,
+    itemsSold,
+    findSaleById
+}
