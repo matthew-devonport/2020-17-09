@@ -32,7 +32,9 @@ npm test a
 
 You can view a dashboard UI design which is live at: [https://matthew-devonport-dashboard.netlify.app/](https://matthew-devonport-dashboard.netlify.app/)
 
-I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality.
+I decided to go for a design like this due to being able to scale to mobile devices well also. Using the pop up to control the sidebar is what's key to making this design effective. A great blueprint to create an effective dashboard. I was inspired heavily from the model of the ClickUp app and sidebar functionality. As stated above, the app is live and can be seen on the link above on mobile devices.
+
+The gif below shows a breif demonstration of the pop up working in production.
 
 ![Dashboard Gif](https://media.giphy.com/media/Sz5N8dGGJAbYMVRAvw/giphy.gif) 
 
