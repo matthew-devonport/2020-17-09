@@ -1,11 +1,3 @@
-$mainColor: #283972;
-
-@mixin flexCenter {
-  display: flex;    
-  justify-content: center;
-  align-items: center;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -180,7 +172,7 @@ $mainColor: #283972;
 
 @media only screen and (max-width: 780px) {
   .sidenav {
-    visibility: hidden;
+    visibility: hidden; /* hides sidenav content */
   }
   .grid-container {
     grid-template-columns: 40px 1fr;
