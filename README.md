@@ -20,7 +20,7 @@ Using CSS, we can style our elements (each treated as a box) to respond to all k
 
 In the directory src there will be a file called sales.js which can be viewed at <a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js">src/sales/sales.js<a>
 
-In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
+In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step comments on how the functions work.
 
 
 
@@ -39,7 +39,7 @@ npm test a
 
 You can view a dashboard UI design app which is live at: [https://matthew-devonport-dashboard.netlify.app/](https://matthew-devonport-dashboard.netlify.app/)
 
-This app has a functional side navigation pop up, although a snapshot of design can be seen below:<br><br>
+This app has a functional side navigation pop up for mobile devices, although a snapshot of design can be seen below:<br><br>
 
 ![Dashboard image](public/img/dashboard.jpg?raw=true "Dashboard Image")
 
@@ -53,7 +53,7 @@ The gif below shows a brief demonstration of the pop up working in production:
 
 <h2>How does that popup work?</h2>
 
-To create the pop up I created a popUpBox component which has properties to use from the sideNav component. These are the abilities to get content from the sidenav content and display it as well as also having the ability to call upon state to be showing its content or not. Onclick events are the triggers to changing state which initially has the popup showing as false. Clicking the '+' button changes state to become true, which pops up sideNav component (which is set separately to the main sideNav component content) on the UI. The event is then triggered back to false on the popUpBox component when hitting the 'x' button.
+To create the pop up, I created a popUpBox component which has properties to use from the sideNav component. These have the abilities to get content from the sidenav component content and display it as well as also having the ability to call upon state to be showing its content or not. Onclick events are the triggers to changing state which initially has the popup showing as false. Clicking the '+' button changes state to become true, which pops up sideNav component (which is set separately to the main sideNav component content) on the UI. The event is then triggered back to false on the popUpBox component when hitting the 'x' button.
 <br><br>
 The code and commenting on how each part of the code works is available to view on these pages below:
 <ul>
