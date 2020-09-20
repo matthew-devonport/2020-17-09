@@ -17,11 +17,11 @@ Using CSS, we can style our elements (each treated as a box) to respond to all k
 
 <h3>:pager: Javascript Is Fun!</h3>
 
-In the directory src there will be a file called sales.js (src/sales/sales.js).
+In the directory src there will be a file called sales.js (<a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/sales/sales.js<a>).
 
 In that file is an array of objects. There are functions related to that array which can be used to get different information from it. I have put plenty of comments explaining what information I am looking to get and step by step on how the functions work.
 
-There are also four working tests for these functions ((src/tests/sales.test.js).
+There are also four working tests for these functions (<a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/sales/sales.js target="_blank">src/tests/sales.test.js<a>).
 After cloing this repository and installing dependencies, these tests can be run with:
 
 ```
@@ -44,7 +44,7 @@ To create the pop up I created a popUpBox component which has properties to use 
 The code and commenting on how each part of the code works is available to view on these pages below:
 <ul>
   <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/Sidenav.jsx" target="_blank">sideNav</a></li>
- <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js" target="_blank">PopUpBox</a>
+ <li><a href="https://github.com/matthew-devonport/2020-17-09/blob/master/src/PopUpBox.js" target="_blank">PopUpBox</a></li>
 </ul>
 
 
