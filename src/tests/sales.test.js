@@ -1,4 +1,4 @@
-const sales = require('../sales')
+const sales = require('../sales/sales')
 
 // Declaring the sales array here as a way to show it on the test file, rather than importing.
 const array = [
@@ -16,10 +16,10 @@ test('totalPrice returns total prices', () => {
 
 // Testing to check saleDate function works correctly.
 test('saleDate returns items sold in 2017', () => {
-    const expected = [{
-    "dateSold": "2017-04-22", "id": "t_acds3", "itemSold": "Rugby ball", "price": 30}, {
-    "dateSold": "2017-03-19", "id": "j_999", "itemSold": "Hockey stick", "price": 54.95
-    }]
+    const expected = [
+     { "dateSold": "2017-04-22", "id": "t_acds3", "itemSold": "Rugby ball", "price": 30 }, 
+     { "dateSold": "2017-03-19", "id": "j_999", "itemSold": "Hockey stick", "price": 54.95}
+     ]
     expect(sales.saleDate(array)).toStrictEqual(expected)
 })
 
@@ -31,7 +31,7 @@ test('itemsSold return items sold as an array', () => {
     expect(sales.itemsSold(array)).toStrictEqual(expected)
 })
 
-// Testing to check if findSaleById functions works correctly
+// Testing to check if findSaleById function works correctly
 test('findSaleById returns the sale from the id', () => {
 
     // Declaring value and id as arguments
